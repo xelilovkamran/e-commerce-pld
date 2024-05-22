@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>E-Commerce System</title>
+        <link rel="stylesheet" href="/static/css/styles.css" />
+    </head>
+    <body>
+        <h1>E-Commerce System</h1>
+        <div id="app">
+            <section id="products">
+                <h2>Products</h2>
+                <ul id="product-list"></ul>
+                <h3>Add Product</h3>
+                <input
+                    type="text"
+                    id="product-name"
+                    placeholder="Product Name"
+                />
+                <input
+                    type="number"
+                    id="product-price"
+                    placeholder="Product Price"
+                />
+                <button onclick="addProduct()">Add Product</button>
+            </section>
+            <section id="customers">
+                <h2>Customers</h2>
+                <ul id="customer-list"></ul>
+                <h3>Add Customer</h3>
+                <input
+                    type="text"
+                    id="customer-name"
+                    placeholder="Customer Name"
+                />
+                <input
+                    type="email"
+                    id="customer-email"
+                    placeholder="Customer Email"
+                />
+                <button onclick="addCustomer()">Add Customer</button>
+            </section>
+            <section id="cart">
+                <h2>Cart</h2>
+                <select id="customer-select">
+                    <option value="" disabled selected>Select Customer</option>
+                </select>
+                <select id="product-select">
+                    <option value="" disabled selected>Select Product</option>
+                </select>
+                <button onclick="addToCart()">Add to Cart</button>
+                <button onclick="checkout()">Checkout</button>
+                <ul id="cart-list"></ul>
+            </section>
+            <section id="orders">
+                <h2>Orders</h2>
+                <ul id="order-list"></ul>
+            </section>
+        </div>
+        <script src="../static/js/script.js"></script>
+    </body>
+</html>
